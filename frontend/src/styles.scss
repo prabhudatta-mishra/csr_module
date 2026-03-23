@@ -1,0 +1,263 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'leaflet/dist/leaflet.css';
+
+body { font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+h1, h2, h3, .brand { font-family: 'Orbitron', 'Poppins', sans-serif; letter-spacing: .02em; }
+
+/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+app-root {
+  display: block;
+  height: 100%;
+}
+
+/* Dark theme toggle */
+body.dark-theme {
+  background: #0b1120; /* Deep sophisticated slate */
+  color: #f1f5f9;
+}
+body.dark-theme .mat-mdc-card {
+  background: #1e1e1e;
+}
+body.dark-theme .mat-mdc-list-item,
+body.dark-theme .mat-mdc-toolbar {
+  background: #1f1f1f;
+  color: #e0e0e0;
+}
+body.dark-theme .mat-mdc-dialog-surface {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+body.dark-theme .mdc-dialog__title {
+  color: #e0e0e0 !important;
+}
+
+/* Futuristic UI utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(16px) saturate(1.8);
+  -webkit-backdrop-filter: blur(16px) saturate(1.8);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+body.dark-theme .glass {
+  background: rgba(30, 41, 59, 0.7) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.hover-pop {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.hover-pop:hover {
+  transform: translateY(-4px) scale(1.015);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+body.dark-theme .hover-pop:hover {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Global Material Tables & Paginators Dark Mode */
+body.dark-theme .mat-mdc-table {
+  background: transparent !important;
+}
+body.dark-theme .mat-mdc-header-row,
+body.dark-theme .mat-mdc-row,
+body.dark-theme .mat-mdc-paginator {
+  background: transparent !important;
+  color: #e2e8f0 !important;
+}
+body.dark-theme .mat-mdc-header-cell {
+  background: rgba(15, 23, 42, 0.4) !important;
+  color: #94a3b8 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+body.dark-theme .mat-mdc-cell {
+  color: #cbd5e1 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
+}
+body.dark-theme .mat-mdc-paginator-outer-container {
+  background: rgba(15, 23, 42, 0.3) !important;
+  color: #94a3b8 !important;
+}
+body.dark-theme .mat-mdc-icon-button {
+  color: #cbd5e1 !important;
+}
+
+.gradient-header {
+  background: linear-gradient(135deg, #10b981 0%, #0ea5e9 100%) !important;
+  color: white !important;
+}
+body.dark-theme .gradient-header {
+  background: linear-gradient(135deg, #059669 0%, #0284c7 100%) !important;
+}
+
+/* Base Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0; /* Keeps it hidden until animation starts */
+}
+
+/* Stagger Utilities */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+
+/* Apply gradient to app toolbar */
+/* We rely on main-layout components styles for .toolbar now */
+
+
+/* Subtle card hover globally */
+.mat-mdc-card.hoverable {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.mat-mdc-card.hoverable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 34px rgba(0,0,0,0.15);
+}
+
+/* Fix: remove mid-line seam in outlined MatFormField across the app */
+.mat-mdc-form-field .mdc-notched-outline__notch {
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+/* Ensure Material overlays (datepicker, menus) appear on top */
+.cdk-overlay-container, .cdk-overlay-pane {
+  z-index: 2000 !important;
+}
+
+.app-theme-teal { color: #0ea5e9; }
+
+/* Toolbar & sidenav */
+
+.sidenav {
+  background: #0b1220;
+  color: #e5e7eb;
+}
+.sidenav .mat-mdc-list-item {
+  border-radius: 10px;
+  margin: 2px 8px;
+}
+.sidenav .mat-mdc-list-item.active {
+  background: rgba(14,165,233,0.15);
+}
+
+/* Cards */
+.mat-mdc-card {
+  border-radius: 12px !important;
+  box-shadow: 0 8px 24px rgba(2,8,23,0.08) !important;
+}
+.mat-mdc-card.hoverable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(2,8,23,0.12) !important;
+}
+
+/* Buttons */
+.mat-mdc-unelevated-button.mat-primary,
+.mat-mdc-raised-button.mat-primary {
+  border-radius: 10px;
+}
+.mat-mdc-outlined-button {
+  border-radius: 10px;
+}
+.mat-mdc-button-base .mdc-button__label { font-weight: 600; }
+
+/* Forms */
+.mat-mdc-form-field .mat-mdc-text-field-wrapper {
+  background: #ffffff;
+  border-radius: 10px;
+}
+.mat-mdc-form-field-appearance-outline .mat-mdc-notched-outline > * {
+  border-color: rgba(2,8,23,0.15) !important;
+}
+.mat-mdc-form-field-appearance-outline.mat-focused .mat-mdc-notched-outline > * {
+  border-color: #0ea5e9 !important;
+}
+.mat-mdc-input-element { color: #0b1220; }
+.mat-mdc-input-element::placeholder { color: #6b7280; }
+.mat-mdc-form-field-subscript-wrapper { margin-top: 2px; }
+
+/* Datepicker panel */
+.mat-datepicker-content { border-radius: 12px !important; }
+.mat-calendar { --mdc-theme-primary: #0ea5e9; }
+
+/* Tables/List density */
+.mat-mdc-table .mdc-data-table__header-row > th,
+.mat-mdc-table .mdc-data-table__row > td { padding: 10px 14px; }
+.mat-mdc-list-item { border-radius: 8px; }
+.mat-mdc-table { /* Sticky header */ tr { position: sticky; top: 0; z-index: 1; } th { background: #fff; } /* Zebra rows */ tbody tr:nth-child(even) td { background: rgba(2,8,23,0.02); } /* Hover highlight */ tbody tr:hover td { background: rgba(14,165,233,0.08); } }
+/* Compact density */
+.mat-mdc-table .mdc-data-table__cell, .mat-mdc-table .mdc-data-table__header-cell {
+  padding-top: 8px; padding-bottom: 8px;
+}
+/* Align actions column */
+td.mat-column-actions, th.mat-column-actions { text-align: center; width: 64px; }
+
+/* Focus states & a11y */
+button:focus-visible, .mat-mdc-button-base:focus-visible, .mat-mdc-icon-button:focus-visible {
+  outline: 3px solid rgba(14,165,233,.55);
+  outline-offset: 2px;
+}
+
+/* Snackbar look */
+.mat-mdc-snack-bar-container {
+  border-radius: 10px !important;
+  box-shadow: 0 10px 30px rgba(2,8,23,0.25) !important;
+}
+.mat-mdc-snack-bar-label { font-weight: 500; }
+
+/* Global spacing */
+.container, .content, .page { padding: 16px; }
+
+/* Inputs: white background, dark text, subtle border */
+.mat-mdc-form-field .mat-mdc-text-field-wrapper {
+  background: #ffffff;
+  border-radius: 8px;
+}
+.mat-mdc-form-field-appearance-outline .mat-mdc-notched-outline > * {
+  border-color: rgba(0,0,0,0.2) !important;
+}
+.mat-mdc-form-field-appearance-outline.mat-focused .mat-mdc-notched-outline > * {
+  border-color: #0ea5e9 !important; /* focus color */
+}
+.mat-mdc-input-element::placeholder {
+  color: #6b7280;
+}
+.mat-mdc-input-element {
+  color: #111827;
+}
+
+/* Ensure toolbar search field stays readable on colored toolbar */
+.toolbar .mat-mdc-form-field .mat-mdc-text-field-wrapper {
+  background: #ffffff;
+}
+
+/* SVG Icons styling */
+.mat-mdc-icon-button svg, .mat-mdc-icon-button svg { 
+  width: 24px !important; 
+  height: 24px !important; 
+  fill: currentColor !important; 
+}
+
+/* Toolbar icon visibility */
+.toolbar .mat-mdc-icon-button { 
+  display: flex !important; 
+  align-items: center !important; 
+  justify-content: center !important; 
+  min-width: 48px !important; 
+  min-height: 48px !important; 
+}

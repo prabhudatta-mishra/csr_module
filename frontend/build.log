@@ -1,0 +1,94 @@
+[1mInitial chunk files[22m  [2m | [22m[1mNames[22m                        [2m | [22m [1mRaw size[22m[2m | [22m[1mEstimated transfer size[22m
+[32mchunk-MEOXU73F.js[39m    [2m | [22m[2m-[22m                            [2m | [22m[36m314.27 kB[39m[2m | [22m               [36m81.84 kB[39m
+[32mmain-4XPKR3K2.js[39m     [2m | [22m[2mmain[22m                         [2m | [22m[36m234.75 kB[39m[2m | [22m               [36m47.60 kB[39m
+[32mchunk-N5GRX7LP.js[39m    [2m | [22m[2m-[22m                            [2m | [22m[36m226.89 kB[39m[2m | [22m               [36m52.55 kB[39m
+[32mstyles-NOM6U4YF.css[39m  [2m | [22m[2mstyles[22m                       [2m | [22m[36m125.25 kB[39m[2m | [22m               [36m12.48 kB[39m
+[32mchunk-PFJVU563.js[39m    [2m | [22m[2m-[22m                            [2m | [22m[36m106.96 kB[39m[2m | [22m               [36m27.98 kB[39m
+[32mchunk-774D2ZKZ.js[39m    [2m | [22m[2m-[22m                            [2m | [22m [36m95.87 kB[39m[2m | [22m               [36m18.09 kB[39m
+[32mchunk-3PVE4B5A.js[39m    [2m | [22m[2m-[22m                            [2m | [22m [36m72.22 kB[39m[2m | [22m               [36m18.03 kB[39m
+[32mchunk-54IMMYQX.js[39m    [2m | [22m[2m-[22m                            [2m | [22m [36m70.77 kB[39m[2m | [22m               [36m13.04 kB[39m
+[32mchunk-LNZIQDBZ.js[39m    [2m | [22m[2m-[22m                            [2m | [22m [36m61.24 kB[39m[2m | [22m               [36m14.18 kB[39m
+[32mchunk-5DO2NZB6.js[39m    [2m | [22m[2m-[22m                            [2m | [22m [36m45.77 kB[39m[2m | [22m                [36m9.30 kB[39m
+[32mpolyfills-5CFQRCPP.js[39m[2m | [22m[2mpolyfills[22m                    [2m | [22m [36m34.59 kB[39m[2m | [22m               [36m11.33 kB[39m
+[32mchunk-4CTF5AQN.js[39m    [2m | [22m[2m-[22m                            [2m | [22m [36m29.02 kB[39m[2m | [22m                [36m6.87 kB[39m
+[32mchunk-UAHKOJJB.js[39m    [2m | [22m[2m-[22m                            [2m | [22m [36m28.85 kB[39m[2m | [22m                [36m7.64 kB[39m
+[32mchunk-LOTURLIU.js[39m    [2m | [22m[2m-[22m                            [2m | [22m [36m17.32 kB[39m[2m | [22m                [36m4.67 kB[39m
+[32mchunk-LABHWD5F.js[39m    [2m | [22m[2m-[22m                            [2m | [22m [36m13.24 kB[39m[2m | [22m                [36m3.23 kB[39m
+[32mchunk-H2MSEM4F.js[39m    [2m | [22m[2m-[22m                            [2m | [22m  [36m9.97 kB[39m[2m | [22m                [36m2.83 kB[39m
+[32mchunk-SOYTDV3M.js[39m    [2m | [22m[2m-[22m                            [2m | [22m  [36m6.75 kB[39m[2m | [22m                [36m1.47 kB[39m
+[32mchunk-CIGPPY4Q.js[39m    [2m | [22m[2m-[22m                            [2m | [22m  [36m5.80 kB[39m[2m | [22m                [36m1.80 kB[39m
+[32mchunk-CHGKUUGJ.js[39m    [2m | [22m[2m-[22m                            [2m | [22m  [36m4.09 kB[39m[2m | [22m                [36m1.15 kB[39m
+[32mchunk-MBSH3XSM.js[39m    [2m | [22m[2m-[22m                            [2m | [22m  [36m2.85 kB[39m[2m | [22m                [36m1.07 kB[39m
+[32mchunk-UYNTH4ME.js[39m    [2m | [22m[2m-[22m                            [2m | [22m  [36m2.06 kB[39m[2m | [22m              [36m626 bytes[39m
+[32mchunk-YSZF2DJ6.js[39m    [2m | [22m[2m-[22m                            [2m | [22m  [36m1.13 kB[39m[2m | [22m              [36m535 bytes[39m
+[32mchunk-XWU7ZLVD.js[39m    [2m | [22m[2m-[22m                            [2m | [22m[36m438 bytes[39m[2m | [22m              [36m438 bytes[39m
+
+[1m [22m                    [2m | [22m[1mInitial total[22m                [2m | [22m  [1m1.51 MB[22m[2m | [22m              [1m338.78 kB[22m
+
+[1mLazy chunk files[22m     [2m | [22m[1mNames[22m                        [2m | [22m [1mRaw size[22m[2m | [22m[1mEstimated transfer size[22m
+[32mchunk-KXOWSNH3.js[39m    [2m | [22m[2mprojects-board-component[22m     [2m | [22m [36m62.68 kB[39m[2m | [22m               [36m14.98 kB[39m
+[32mchunk-MAOQLVEG.js[39m    [2m | [22m[2m-[22m                            [2m | [22m [36m61.12 kB[39m[2m | [22m               [36m13.18 kB[39m
+[32mchunk-PIIYQTEB.js[39m    [2m | [22m[2m-[22m                            [2m | [22m [36m38.82 kB[39m[2m | [22m               [36m10.09 kB[39m
+[32mchunk-VVS4S6XP.js[39m    [2m | [22m[2memployees-component[22m          [2m | [22m [36m28.05 kB[39m[2m | [22m                [36m6.69 kB[39m
+[32mchunk-ERK6X5JG.js[39m    [2m | [22m[2mprojects-component[22m           [2m | [22m [36m22.00 kB[39m[2m | [22m                [36m5.45 kB[39m
+[32mchunk-YURBHUGZ.js[39m    [2m | [22m[2mvolunteers-cards-component[22m   [2m | [22m [36m20.72 kB[39m[2m | [22m                [36m5.04 kB[39m
+[32mchunk-7ZXT3OVV.js[39m    [2m | [22m[2mvolunteer-dashboard-component[22m[2m | [22m [36m17.99 kB[39m[2m | [22m                [36m4.58 kB[39m
+[32mchunk-FEZR7Q42.js[39m    [2m | [22m[2mevents-component[22m             [2m | [22m [36m16.08 kB[39m[2m | [22m                [36m4.17 kB[39m
+[32mchunk-62SOMM25.js[39m    [2m | [22m[2massignments-component[22m        [2m | [22m [36m15.79 kB[39m[2m | [22m                [36m3.87 kB[39m
+[32mchunk-LH4LGXYH.js[39m    [2m | [22m[2mreports-component[22m            [2m | [22m [36m14.17 kB[39m[2m | [22m                [36m3.78 kB[39m
+[32mchunk-YHDNKB4R.js[39m    [2m | [22m[2mverify-component[22m             [2m | [22m [36m12.88 kB[39m[2m | [22m                [36m3.53 kB[39m
+[32mchunk-LJATNEXE.js[39m    [2m | [22m[2mmy-projects-component[22m        [2m | [22m  [36m8.19 kB[39m[2m | [22m                [36m2.35 kB[39m
+[32mchunk-P74HNX3K.js[39m    [2m | [22m[2mprojects-grid-component[22m      [2m | [22m  [36m7.59 kB[39m[2m | [22m                [36m2.38 kB[39m
+[32mchunk-MFLLM7BY.js[39m    [2m | [22m[2m-[22m                            [2m | [22m[36m962 bytes[39m[2m | [22m              [36m962 bytes[39m
+[32mchunk-3QUAD5LS.js[39m    [2m | [22m[2m-[22m                            [2m | [22m[36m366 bytes[39m[2m | [22m              [36m366 bytes[39m
+
+Application bundle generation failed. [9.571 seconds] - 2026-03-21T03:31:24.563Z
+
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:scss;4249e51ebed2510befc827d55ef20ee42fd5be66e4d5ca0eb0f6c74b5bce5fcb;C:/Users/ASUS/Desktop/csr module/frontend/src/app/components/layout/main-layout.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 5.43 kB with a total of 9.43 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:scss;638bffebd7fdcf4af983942490f0fc62409b19a1c116ce598e4496d28e47e950;C:/Users/ASUS/Desktop/csr module/frontend/src/app/components/auth/login.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 1.23 kB with a total of 5.23 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:scss;561b89d54d0adfe60e497da498437843ad2900ce85cc752648d7c5a53a1d6ef5;C:/Users/ASUS/Desktop/csr module/frontend/src/app/components/admin/assignments.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 1.76 kB with a total of 5.76 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:scss;f7f61abe0f625bb9f0a0e48bd830bad7ee9e6f42710cfaef3e3981da10652b95;C:/Users/ASUS/Desktop/csr module/frontend/src/app/components/shared/add-project-dialog.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 655 bytes with a total of 4.66 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:scss;c3b621d81f1e7e11cf24aab6ad5aca958c4dfa87829a50bbb96d23a2fa735a90;C:/Users/ASUS/Desktop/csr module/frontend/src/app/components/book-project/book-project.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 2.51 kB with a total of 6.51 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:scss;f7d7b15396499a916eb389cdf0ecfaca97fa6360c7e109f0a2ba673a9025360f;C:/Users/ASUS/Desktop/csr module/frontend/src/app/components/projects/projects.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 3.06 kB with a total of 7.06 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:scss;7f40202785be64e4e77bfaf4f7d5f8e5f8877af5017792546d37ebbd98930eaa;C:/Users/ASUS/Desktop/csr module/frontend/src/app/components/events/events.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 1.82 kB with a total of 5.82 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:scss;4308ef3d1348828ff0de436a0e59063d061c4919ef6f131f26f5beee2b65d417;C:/Users/ASUS/Desktop/csr module/frontend/src/app/components/volunteers/volunteer-dashboard.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 2.02 kB with a total of 6.02 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:scss;b464ef8d78a714460bcf17d2452fb7e36caf75ee2d47f933ef311163bffe20e9;C:/Users/ASUS/Desktop/csr module/frontend/src/app/components/reports/reports.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 747 bytes with a total of 4.75 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:scss;8a5dfebeba842db63752d3396e3261c67a0b4e2c44853c5ea539374e6108d0cd;C:/Users/ASUS/Desktop/csr module/frontend/src/app/components/projects/project-dialog.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 27 bytes with a total of 4.03 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:scss;c2ff57a266095ee59363fd4c5a3406f877a625a23b676642e0da4d9d32918254;C:/Users/ASUS/Desktop/csr module/frontend/src/app/components/employees/employees.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 2.78 kB with a total of 6.78 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:scss;7e730fc2ddf01f3b6833ad52db43cbe590362ef78b18ad4244d8f085a904fcc1;C:/Users/ASUS/Desktop/csr module/frontend/src/app/components/admin/employee-management.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 3.86 kB with a total of 7.86 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:scss;43b6720b8e0c4493e29777321b0f8bca52490c65e63cbde2d0346167848c39e0;C:/Users/ASUS/Desktop/csr module/frontend/src/app/components/volunteers/volunteers-cards.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 2.39 kB with a total of 6.39 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:scss;83d95d6b23f7a58761cb4eb842469954ae76c0e00e513a7e2a686a48de47c9a3;C:/Users/ASUS/Desktop/csr module/frontend/src/app/components/dashboard/dashboard.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 2.88 kB with a total of 6.88 kB.[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mangular:styles/component:scss;1a4bd163cc3b2cc81d85095806ad20419e1e75e8c390f6765974b7bbfb65f743;C:/Users/ASUS/Desktop/csr module/frontend/src/app/components/admin/project-management.component.ts exceeded maximum budget. Budget 4.00 kB was not met by 3.20 kB with a total of 7.20 kB.[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mangular:styles/component:scss;4249e51ebed2510befc827d55ef20ee42fd5be66e4d5ca0eb0f6c74b5bce5fcb;C:/Users/ASUS/Desktop/csr module/frontend/src/app/components/layout/main-layout.component.ts exceeded maximum budget. Budget 8.00 kB was not met by 1.43 kB with a total of 9.43 kB.[0m
+
+[39m[22m
