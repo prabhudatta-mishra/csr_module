@@ -405,13 +405,23 @@ export class ProjectsComponent {
   }
 
   add() {
-    const ref = this.dialog.open(ProjectDialogComponent, { width: '600px', data: { mode: 'add' } });
-    ref.afterClosed().subscribe(r => { if (r) this.snackBar.open('Project added!', 'Close', { duration: 3000 }); });
+    const ref = this.dialog.open(ProjectDialogComponent, { width: '600px', data: {} });
+    ref.afterClosed().subscribe(r => { 
+      if (r) {
+        this.projectsService.add(r);
+        this.snackBar.open('Project added!', 'Close', { duration: 3000 }); 
+      }
+    });
   }
 
   edit(project: Project) {
-    const ref = this.dialog.open(ProjectDialogComponent, { width: '600px', data: { mode: 'edit', project } });
-    ref.afterClosed().subscribe(r => { if (r) this.snackBar.open('Project updated!', 'Close', { duration: 3000 }); });
+    const ref = this.dialog.open(ProjectDialogComponent, { width: '600px', data: { ...project } });
+    ref.afterClosed().subscribe(r => { 
+      if (r) {
+        this.projectsService.update(project.id, r);
+        this.snackBar.open('Project updated!', 'Close', { duration: 3000 }); 
+      }
+    });
   }
 
   delete(project: Project) {

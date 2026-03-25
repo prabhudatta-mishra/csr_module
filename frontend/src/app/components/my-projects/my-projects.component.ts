@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -130,24 +130,35 @@ export class MyProjectsComponent {
     private readonly employees: EmployeesService,
     private readonly projectsSvc: ProjectsService
   ) {
-    const uid = this.auth.userId();
-    if (uid == null) return;
-    
-    // Find true employee ID via profile email, fallback to uid
-    const profile = this.auth.profile();
-    let emp: any = null;
-    if (profile && profile.email) {
-      emp = this.employees.list().find((e: any) => e.email === profile.email);
-    }
-    if (!emp) {
-      emp = this.employees.list().find((e: any) => e.id === uid);
-    }
+    effect(() => {
+      const uid = this.auth.userId();
+      if (uid == null) {
+        this.projects = [];
+        return;
+      }
+      
+      // Find true employee ID via profile email, fallback to uid
+      const profile = this.auth.profile();
+      const allEmps = this.employees.list();
+      let emp: any = null;
+      
+      if (profile && profile.email) {
+        emp = allEmps.find((e: any) => e.email === profile.email);
+      }
+      if (!emp) {
+        emp = allEmps.find((e: any) => e.id === uid);
+      }
 
-    if (!emp) return;
-    this.employeeId = emp.id;
+      if (!emp) {
+        this.projects = [];
+        return;
+      }
+      
+      this.employeeId = emp.id;
 
-    const all = this.projectsSvc.list();
-    this.projects = all.filter((p: any) => emp.assignedProjectIds.includes(p.id));
+      const allProjs = this.projectsSvc.list();
+      this.projects = allProjs.filter((p: any) => (emp.assignedProjectIds || []).includes(p.id));
+    });
 
   }
 }

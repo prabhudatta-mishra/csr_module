@@ -284,10 +284,27 @@ export class VolunteerDashboardComponent {
   
   volunteerId = computed(() => {
     let uid = this.auth.userId();
+    const profile = this.auth.profile();
+    
+    // Attempt to match the addOrGet logic from EventsService exactly
+    if (profile) {
+      let pEmail = profile.email;
+      // If the dashboard used volunteer@csr.com as fallback, check if there's a match
+      if (!pEmail) {
+        const defaultMatch = this.empSvc.employees().find(x => x.role === 'Volunteer');
+        if (defaultMatch) return defaultMatch.id;
+      }
+      const e = this.empSvc.employees().find(x => x.email.toLowerCase() === (pEmail || '').toLowerCase());
+      if (e) return e.id;
+      
+      // If they booked an event recently, addOrGet might have created userX@local
+      // Let's find the most recently created Volunteer that matches the name
+      const nameMatch = this.empSvc.employees().slice().reverse().find(x => x.name === profile.name && x.role === 'Volunteer');
+      if (nameMatch) return nameMatch.id;
+    }
+
     if (uid === 999) {
-      const pEmail = this.auth.profile()?.email || 'volunteer@csr.com';
-      let e = this.empSvc.employees().find(x => x.email.toLowerCase() === pEmail.toLowerCase());
-      if (!e) e = this.empSvc.employees().find(x => x.role === 'Volunteer');
+      let e = this.empSvc.employees().find(x => x.role === 'Volunteer');
       return e ? e.id : 999;
     }
     return uid || 999;

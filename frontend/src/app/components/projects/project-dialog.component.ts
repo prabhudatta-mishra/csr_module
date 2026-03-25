@@ -204,7 +204,7 @@ import { ProjectsService } from '../../projects.service';
     :host-context(.dark-theme) .dlg-title { color: #f1f5f9; }
 
     /* ── Body ── */
-    .dlg-body { display: flex; flex-direction: column; gap: .75rem; padding: 1rem 1.5rem; }
+    .dlg-body { display: flex; flex-direction: column; gap: .75rem; padding: 1rem 1.5rem; max-height: 65vh; overflow-y: auto; }
 
     /* ── Section labels ── */
     .section-label {

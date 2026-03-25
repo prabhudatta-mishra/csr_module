@@ -13,5 +13,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
     Optional<User> findByUsernameOrEmailAndRole(@Param("usernameOrEmail") String usernameOrEmail, @Param("role") String role);
 
     boolean existsByEmail(String email);
+    
+    @org.springframework.transaction.annotation.Transactional
     void deleteByEmail(String email);
 }
