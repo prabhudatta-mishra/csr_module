@@ -22,6 +22,7 @@ interface VolunteerProfile { id: number; name: string; email: string; }
       <div class="page-header animate-fade-in-up">
         <div>
           <h1 class="page-title"><span class="gradient-title">Volunteer Assignments</span></h1>
+          
           <p class="page-subtitle">Assign one volunteer to multiple employees manually</p>
         </div>
         <div class="header-pills">
